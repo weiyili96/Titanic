@@ -1,7 +1,12 @@
 *************************************************************
 * name: Titanic
 * author: Weiyi Li
+<<<<<<< HEAD
 * description: 
+=======
+* description: casual effect of survival on Titanic and first-class, with some 
+*			   other effects
+>>>>>>> 7d2268c7eb0dfa4f72f66e2a2c62b34636387592
 * date: may 14, 2020
 *************************************************************
 
@@ -24,7 +29,11 @@ regress survived first_class, vce(hc3)
 regress survived first_class, vce(cluster sex)
 
 * 7f
+<<<<<<< HEAD
 * After the decompositon, I think the treu effect of first class on surviiving 
+=======
+* After the decompositon, I think the true effect of first class on surviving 
+>>>>>>> 7d2268c7eb0dfa4f72f66e2a2c62b34636387592
 * the sinking is almost the true effect but might be a bit larger, but 
 * definitely much better than the non-clustering ones. 
 
@@ -58,7 +67,11 @@ regress first_class age gender
 predict resfirst_class, r
 * regress the survival and residual of first_class
 regress survived  resfirst_class
+<<<<<<< HEAD
 * the 2 coefficient are the same, with a little difference on their standard
+=======
+* the 2 coefficients are the same, with a little difference on their standard
+>>>>>>> 7d2268c7eb0dfa4f72f66e2a2c62b34636387592
 * errors. I think the coefficients don't vary a lot is because age and gender
 * are not highly correlated with each other; therefore, those shouldn't be the 
 * disturbance when doing the long regression. 
